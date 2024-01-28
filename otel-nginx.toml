@@ -1,0 +1,9 @@
+exporter = "otlp"
+processor = "simple"
+
+[exporters.otlp]
+host = "otel"
+port = 4317
+
+[service]
+name = "nginx-test-crash"
